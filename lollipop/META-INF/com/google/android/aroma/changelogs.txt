@@ -1,0 +1,172 @@
+Jan 26
+-Add FRANDOM Support 
+-Update Sound Control
+-FiFo, ZEN, and Vr I/O Schedulers
+-Add exFAT
+-Fix Logic Issue in Simple GPU Governor
+-Update LZO
+-Merge with CM (Linux 3.4.105)
+-Add LZ4
+-Add NEON Optimizations 
+-TCP Congestion Control Algorithms
+-Better Build Flags 
+-Clean Up INTELLI_PLUG Compilation 
+-Update Intelli_Plug
+-dm-crypt Intelli_Plug Performance Boost Options
+-Update BFQ I/O Scheduler
+-Remove Governor Overrides
+
+December 17, 2014
+-Rebuilt with linaro 4.9.3 toolchain optimized for cortex A15
+-Minor fixes
+-Sync w/ latest CM sources
+
+December 12, 2014
+-Add intellimm governor and intellithermal
+-minor fixes
+
+December 2, 2014
+-disabled touchboost by default
+
+December 1, 2014
+-Added OTA Updater support
+-Enabled faux sound control
+-minor intelliactive update
+
+November 30, 2014
+-Change mpdecision to faux123 intelliplug
+
+November 24, 2014
+-Change to CM12 base
+
+October 8 - Nov 24, 2014
+-Sync w latest CM11 sources
+
+Sept 28, 2014
+-Sync w latest CM11 sources
+-Mpdec fixups (taken from ShowP hammerhead kernel)
+
+August 13-24, 2014
+-Sync w/ latest CM11 sources (including new wifi base)
+
+August 7, 2014
+-More minor fixes and stability
+
+August 6, 2014
+-Minor fixes (script to rename old mpdecision,etc)
+
+August 5, 2014
+-Revert s2w,d2w & pocket detect code (improve stability)
+-Other reverts to improve stability (l2 cache, etc)
+
+August 4, 2014
+-Sync w latest CM11 sources
+
+July 31, 2014
+-Reverted some older wifi changes and
+rebuilt using lower optimization on wifi (stability help possibly)
+
+July 28, 2014
+-Updated to use Linaro 4.9.1 toolchain optimized for cortex a15
+-Re-enabled in kernel mpdecision
+
+July 6-24, 2014
+-Sync with latest CM11 sources
+
+June 21, 2014
+-Disabled in kernel mpdecision for stability (and re-enabled stock)
+-Sync w latest CM11 sources
+
+June 13, 2014
+-Sync with latest CM11 sources
+
+May 27, 2014
+-Updated intelliactive governor
+-Revert "Added back some pocket detect code" for stability
+-Disabled led notification duration timeout mod (not needed for cm11 anyway) for stability
+-Added back small bit of code that may help w/ lingering SOD issues
+
+May 19, 2014
+-Sync w latest CM11 sources
+-Added back some pocket detect code
+
+May 8, 2014
+-Sync with latest CM11 sources
+-Merge with latest Code Aurora Forum (CAF) commits
+-Use custom voltage table (in post #3)
+when selecting voltage table option in aroma
+
+May 1, 2014
+-Sync with latest CM11 sources
+
+April 27, 2014
+-Minor Sync with latest CM11 Sources
+-Added option to install 2.15 or 2.16 hboot ramdisk
+
+March 22 - April 1, 2014
+-Sync with latest CM11 Sources
+(Cutting down screen-on lag)
+
+March 17, 2014
+-AROMA Installer updated to latest version
+-Max CPU Freq added to command line
+-Force Fastcharge added to command line
+-CPU Governor added to command line
+-Sync with latest CM11 sources
+
+March 12, 2014
+-Cleaned up and did a proper merge with CM11 sources & update to 3.4.82 Linux
+-Some files were missing the first time around
+
+March 9, 2014
+-Merged with latest CM11 sources & update to 3.4.82 Linux
+
+March 4, 2014
+-Re-enabled module loading
+-Added kcontrolg gpu module (for advanced gpu tuning in kcontrol)
+-Rmbq's fixes for GPU power level (more efficient, adds to battery life)
+-Added 2D GPU and 3D GPU OC to the command line
+
+
+February 21, 2014
+-Synced with latest CM11 sources which removed some pocket detect code
+-But kept small bit of pocket detect code for s2w and dt2w
+-Small bit of code that may help w/ lingering SOD issues
+
+February 20, 2014
+-Added intellidemand from faux123 M7 kernel but optimized for Ville
+-Added NEW intelliactive kernel from faux123!!!
+-Synced with latest CodeFire sources (updated BFQ scheduler)
+-Synced with latest CM11 sources
+
+February 17, 2014
+-Added AROMA installer
+-Added cmd line interfacing for s2w,dt2w,pocket detection, bln, and undervolt table
+-Full o3 flag optimization
+-Sweep 2 Wake, Double Tap 2 Wake, and Pocket Detection Added
+-cpu table version export
+-disabled faux123 sound control (for now)
+-disabled mpdec input boost (for now)
+
+February 9, 2014
+-Ported Notification LED Mod by yank555-lu
+
+February 6, 2014
+-Fix gyro off status checks (synced with latest CM11 sources)
+
+February 5, 2014
+*Initial Release
+-Overclock to 1.72
+-Undervolt to 850
+-Overclock GPU (& new "Simple" GPU Governor)
+-L2 Cache Boost
+-Button Light Notification
+-Most up to date kernel based MPDecision & 3 Phase ThermalD
+-faux123 sound control
+-Notification LED Duration Timeout
+-Added schedulers including fiops, bfq, and sio
+-Fixed all Linaro O3 compiling issues, so now the kernel is compiled with CodefireX toolchain WITH O3 Flags 
+-Synced with latest CodefireX and CM11 sources
+-Asynchronous Fsync
+-Some added stability (maybe)
+

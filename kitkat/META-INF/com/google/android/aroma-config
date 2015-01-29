@@ -1,0 +1,256 @@
+##
+#
+# AROMA Installer - IceCode-Kernel
+#       (c) 2011-2012 by Ahmad Amarullah
+#           amarullz - xda-developers
+#           http://www.amarullz.com/
+#
+#       Binary Version  : 2.70RC2 (NEW)
+#
+##
+
+#Content
+
+#set vars
+ini_set("rom_name",             "IceCode-Kernel");
+ini_set("rom_version", "6.3.0");
+ini_set("rom_author",           "AKToronto");
+ini_set("rom_device", "ville");
+ini_set("rom_date", "12-17-2014");
+ini_set("transition",           "slide");
+ini_set("force_colorspace",     "rgba");
+
+splash(2000, "IceCode");
+
+fontresload( "0", "ttf/Roboto-Regular.ttf", "12" );
+fontresload( "1", "ttf/Roboto-Regular.ttf", "18" );
+loadlang("langs/en.lang");
+theme("miuisense");
+
+viewbox(
+  "Welcome",
+    "\n\n\n\n\n"+
+    "           	You're about to flash\n"+
+    "      		"+ini_get("rom_name")+" for "+ini_get("rom_device")+"\n\n"+
+    "\n\n\n"+
+    "  AUTHOR : <#800>"+ini_get("rom_author")+"</#>\n"+
+    "  VERSION : <#080>"+ini_get("rom_version")+"</#>\n"+
+    "  UPDATED : <#008>"+ini_get("rom_date")+"</#>\n\n"+
+    "Press Next to continue the installation...",
+  "icons/info"
+);
+
+agreebox(
+  "Important information!",
+  "Please read this carefully...",
+  "icons/agreement",
+  readfile_aroma("agreement.txt"),
+  "I have read and understood everything...",
+  "Please tick the checkbox..."
+);
+
+textbox(
+  "Changelog",
+  "IceCode Changelog",
+  "icons/info",
+  readfile_aroma("changelogs.txt")
+);
+
+appendvar("installmsg","\n\nPlease select installation type below:");
+
+selectbox(
+  "CPU Max Frequency",
+  "Please Select your CPU Max Frequency:",
+  "icons/personalize",
+  "maxkhz.prop",
+
+  "1512 MHz","Default ",1,
+  "1674 MHz","Overclock",0,
+  "1728 MHz","Overclock",0
+);
+
+selectbox(
+  "2D GPU Overclock",
+  "Please Select:",
+  "icons/personalize",
+  "twodgpu.prop",
+  
+  "2D GPU OC disabled (stock)","@200Mhz",1,
+  "2D GPU overclock","@267Mhz",0,
+  "2D GPU overclock","Caution! @300Mhz",0,
+  "2D GPU overclock","Caution! @320Mhz",0
+);
+
+selectbox(
+  "3D GPU Overclock",
+  "Please Select:",
+  "icons/personalize",
+  "threedgpu.prop",
+  
+  "3D GPU OC disabled (stock)","@400Mhz",1,
+  "3D GPU overclock","@436Mhz",0,
+  "3D GPU overclock","Caution! @480Mhz",0,
+  "3D GPU overclock","Caution! @512Mhz",0
+);
+
+#selectbox(
+#  "Governor",
+#  "Default governor:",
+#  "icons/personalize",
+#  "gov.prop",
+#  
+#  "intellidemand","IceCode default ",1,
+#  "interactive","CM11 default",0,
+#  "intelliactive","New governor from faux123",0,
+#  "ondemand","SENSE default",0,
+#  "conservative","",0,
+#  "userspace","",0,
+#  "powersave","",0,
+#  "performance","always clock with max frequency",0
+#);
+
+selectbox(
+  "I/O Scheduler",
+  "Default i/o scheduler:",
+  "icons/personalize",
+  "scheduler.prop",
+
+  "fiops","Icecode Default",1,  
+  "row","CM11 Default",0,
+  "cfq","SENSE Default",0,
+  "bfq","",0,
+  "noop","",0,
+  "deadline","",0,
+  "sio","",0
+  "vr","",0
+  "zen","",0
+  "fifo","",0
+);
+
+selectbox(
+  "Do you want Button Light Notification?",
+  "Please Select:",
+  "icons/personalize",
+  "button.prop",
+  
+  "Yes!","Rock n Roll",1,
+  "Nope.","Not for me",0
+);
+
+#selectbox(
+#  "Do you want Sweep2wake?",
+#  "Please Select:",
+#  "icons/personalize",
+#  "sweep.prop",
+#  
+#  "Yes!","Rock n Roll",0,
+#  "Nope.","Not for me",1
+#);
+
+#selectbox(
+#  "Do you want Doubletap2wake?",
+#  "Please Select:",
+#  "icons/personalize",
+#  "double.prop",
+#  
+#  "Yes!","On Back Button",0,
+#  "Yes!","On Home Button",0,
+#  "Yes!","On Recents Button",0,
+#  "Nope.","Not for me",1
+#);
+
+#selectbox(
+#  "Do you want Pocket Detection?",
+#  "Please Select:",
+#  "icons/personalize",
+#  "pocket.prop",
+#  
+#  "Yes!","A good idea if you enable s2w or d2w",0,
+#  "Nope.","Not for me",1
+#);
+
+selectbox(
+  "Do you want Force Fastcharge?",
+  "Please Select:",
+  "icons/personalize",
+  "fast.prop",
+  
+  "Yes!","Rock n Roll",0,
+  "Nope.","Not for me",1
+);
+
+selectbox(
+  "Lower your voltage table by default?",
+  "Please Select:",
+  "icons/personalize",
+  "uvolt.prop",
+  
+  "Yes!","Use AKToronto's custom voltage table",0,
+  "Nope.","Default - Keeps CPU voltages at 1150000 - You can undervolt later",1
+);
+
+selectbox(
+  "Install/Update Kernel OTA Updater?",
+  "Please Select:",
+  "icons/personalize",
+  "otaupdater.prop",
+  
+  "Yes!","Install/Update OTA Updater kernel info",0,
+  "Nope.","Do not install OTA Updater",1
+  
+);
+
+#selectbox(
+#  "Custom Ramdisk?",
+#  "Please Select:",
+#  "icons/personalize",
+#  "rdisk.prop",
+  
+#  "Use ROM ramdisk","Default option (keep it here if your ROM is for your hboot)",1,
+#  "Use 2.15 ramdisk","Select for 2.15 hboot ramdisk",0,
+#  "Use 2.16 ramdisk","Select for 2.16 hboot ramdisk",0
+#);
+
+#selectbox(
+#  "Minfreq",
+#  "Please Select your minfreq:",
+#  "icons/personalize",
+#  "minkhz.prop",
+#
+#  "384 MHz","default",1
+#  );
+
+#selectbox(
+#  "Screen off",
+#  "Please Select your screen off max freq:",
+#  "icons/personalize",
+#  "scroff.prop",
+#
+#  "384 MHz","",0,
+#  "486 MHz","default",1,
+#  "594 MHz","",0
+#  );
+
+viewbox(
+  "Ready To Install",
+  "I got everything I need to pull this off!\n\n"+
+  "Click -Next- to start the installation...",
+  "icons/info"
+);
+
+install(
+  "Installing",
+  "Installing IceCode...\nPlease wait until I am finished...",
+  "icons/install"
+);
+
+# Set Next Text fo Finish
+ini_set("text_next", "Finish");
+
+viewbox(
+  "Installation Completed",
+  "<#080>Congratulations...</#>\n\n"+
+  "IceCode has been installed\n\n"+
+  "Press Finish, and Reboot your phone.\n\n",
+  "icons/info"
+);
