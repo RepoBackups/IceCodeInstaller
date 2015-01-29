@@ -93,21 +93,23 @@ selectbox(
   "3D GPU overclock","Caution! @512Mhz",0
 );
 
-#selectbox(
-#  "Governor",
-#  "Default governor:",
-#  "icons/personalize",
-#  "gov.prop",
-#  
-#  "intellidemand","IceCode default ",1,
-#  "interactive","CM11 default",0,
-#  "intelliactive","New governor from faux123",0,
-#  "ondemand","SENSE default",0,
-#  "conservative","",0,
-#  "userspace","",0,
-#  "powersave","",0,
-#  "performance","always clock with max frequency",0
-#);
+selectbox(
+  "Governor",
+  "Default governor:",
+  "icons/personalize",
+  "gov.prop",
+  
+  "intellimm","IceCode default ",1,
+  "intellidemand","New governor from faux123",0,
+  "interactive","CM11 default",0,
+  "intelliactive","New governor from faux123",0,
+  "elementalx","New governor from flar2",0,
+  "ondemand","SENSE default",0,
+  "conservative","",0,
+  "userspace","",0,
+  "powersave","",0,
+  "performance","always clock with max frequency",0
+);
 
 selectbox(
   "I/O Scheduler",
