@@ -99,16 +99,16 @@ selectbox(
   "icons/personalize",
   "gov.prop",
   
-  "intellimm","IceCode default ",1,
-  "ondemand","CyanogenMod 11 Default",0,
-  "intellidemand","New governor from faux123",0,
-  "intelliactive","New governor from faux123",0,
-  "elementalx","New governor from flar2",0,
-  "interactive","",0,
-  "conservative","",0,
-  "userspace","",0,
-  "powersave","",0,
-  "performance","always clock with max frequency",0
+  "intellimm","Intelligent MinMax (IceCode Default) ",1,
+  "ondemand","Fair Governor (CM 11 Default)",0,
+  "intellidemand","Intelligent Ondemand",0,
+  "intelliactive","Intelligent Interactive",0,
+  "elementalx","",0,
+  "interactive","More Responsive Ondemand",0,
+  "conservative","Slow Ondemand",0,
+  "userspace","Not Recommended",0,
+  "powersave","Always Clock With Min Freqency",0,
+  "performance","Always Clock With Max Frequency",0
 );
 
 selectbox(
@@ -117,16 +117,16 @@ selectbox(
   "icons/personalize",
   "scheduler.prop",
 
-  "fiops","Icecode Default",1,  
-  "row","CM11 Default",0,
-  "cfq","SENSE Default",0,
-  "bfq","",0,
-  "noop","",0,
-  "deadline","",0,
-  "sio","",0,
-  "vr","",0,
+  "fiops","Fair In Out Performance Scheduler (Icecode Default)",1,  
+  "row","Read Over Write (CM 11 Default)",0,
+  "cfq","Completely Fair Queing (Sense Default)",0,
+  "bfq","Budgeted Fair Queing",0,
+  "noop","First In First Out & Request Merging",0,
+  "deadline","Minimize I/O Latency",0,
+  "sio","Mix Between Noop & Deadline",0,
+  "vr","Not Recommended",0,
   "zen","",0,
-  "fifo","",0
+  "fifo","First In First Out",0
 );
 
 selectbox(
