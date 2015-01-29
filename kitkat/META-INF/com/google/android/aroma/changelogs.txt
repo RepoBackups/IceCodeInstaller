@@ -2,6 +2,7 @@ Jan 29
 -Remove Governor Overrides
 -Add Governor Choice to AROMA
 -Add ElementalX Governor
+-Fix -O3
 
 Jan 26
 -Add FRANDOM Support
@@ -19,6 +20,7 @@ Jan 26
 -Update Intelli_Plug
 -dm-crypt Intelli_Plug Performance Boost Options
 -Update BFQ I/O Scheduler
+-Compile with Latest Linaro 4.9.3 Toolchain
 
 December 17, 2014
 -Rebuilt with linaro 4.9.3 toolchain optimized for cortex A15
