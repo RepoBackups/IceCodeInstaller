@@ -123,9 +123,9 @@ selectbox(
   "bfq","",0,
   "noop","",0,
   "deadline","",0,
-  "sio","",0
-  "vr","",0
-  "zen","",0
+  "sio","",0,
+  "vr","",0,
+  "zen","",0,
   "fifo","",0
 );
 
