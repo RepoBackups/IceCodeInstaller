@@ -21,6 +21,7 @@ ui_print("Extracting files ...");
 package_extract_dir("kernel", "/tmp");
 set_perm(0, 0, 0777, "/tmp/cmdline.sh");
 set_perm(0, 0, 0777, "/tmp/scheduler.sh");
+set_perm(0, 0, 0777, "/tmp/governor.sh");
 set_perm(0, 0, 0777, "/tmp/buttonlight.sh");
 set_perm(0, 0, 0777, "/tmp/fastcharge.sh");
 set_perm(0, 0, 0777, "/tmp/undervolt.sh");
@@ -102,6 +103,10 @@ set_progress(0.8);
 ################SCHEDULER
 ui_print("Setting chosen scheduler...");
 run_program("/tmp/scheduler.sh");
+
+################GOVERNOR
+ui_print("Setting chosen governor...");
+run_program("/tmp/governor.sh");
 set_progress(0.85);
 
 ################REPACK

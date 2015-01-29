@@ -13,10 +13,10 @@
 
 #set vars
 ini_set("rom_name",             "IceCode-Kernel");
-ini_set("rom_version", "6.3.0");
+ini_set("rom_version", "6.5.0");
 ini_set("rom_author",           "AKToronto");
 ini_set("rom_device", "ville");
-ini_set("rom_date", "12-17-2014");
+ini_set("rom_date", "01-29-2015");
 ini_set("transition",           "slide");
 ini_set("force_colorspace",     "rgba");
 
@@ -93,21 +93,23 @@ selectbox(
   "3D GPU overclock","Caution! @512Mhz",0
 );
 
-#selectbox(
-#  "Governor",
-#  "Default governor:",
-#  "icons/personalize",
-#  "gov.prop",
-#  
-#  "intellidemand","IceCode default ",1,
-#  "interactive","CM11 default",0,
-#  "intelliactive","New governor from faux123",0,
-#  "ondemand","SENSE default",0,
-#  "conservative","",0,
-#  "userspace","",0,
-#  "powersave","",0,
-#  "performance","always clock with max frequency",0
-#);
+selectbox(
+  "Governor",
+  "Default governor:",
+  "icons/personalize",
+  "gov.prop",
+  
+  "intellimm","IceCode default ",1,
+  "intellidemand","New governor from faux123",0,
+  "interactive","CM11 default",0,
+  "intelliactive","New governor from faux123",0,
+  "elementalx","New governor from flar2",0,
+  "ondemand","SENSE default",0,
+  "conservative","",0,
+  "userspace","",0,
+  "powersave","",0,
+  "performance","always clock with max frequency",0
+);
 
 selectbox(
   "I/O Scheduler",

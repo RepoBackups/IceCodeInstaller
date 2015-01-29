@@ -1,5 +1,10 @@
+Jan 29
+-Remove Governor Overrides
+-Add Governor Choice to AROMA
+-Add ElementalX Governor
+
 Jan 26
--Add FRANDOM Support 
+-Add FRANDOM Support
 -Update Sound Control
 -FiFo, ZEN, and Vr I/O Schedulers
 -Add exFAT
@@ -7,14 +12,13 @@ Jan 26
 -Update LZO
 -Merge with CM (Linux 3.4.105)
 -Add LZ4
--Add NEON Optimizations 
+-Add NEON Optimizations
 -TCP Congestion Control Algorithms
--Better Build Flags 
--Clean Up INTELLI_PLUG Compilation 
+-Better Build Flags
+-Clean Up INTELLI_PLUG Compilation
 -Update Intelli_Plug
 -dm-crypt Intelli_Plug Performance Boost Options
 -Update BFQ I/O Scheduler
--Remove Governor Overrides
 
 December 17, 2014
 -Rebuilt with linaro 4.9.3 toolchain optimized for cortex A15
