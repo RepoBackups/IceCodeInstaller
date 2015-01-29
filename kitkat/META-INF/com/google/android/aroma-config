@@ -100,11 +100,11 @@ selectbox(
   "gov.prop",
   
   "intellimm","IceCode default ",1,
+  "ondemand","CyanogenMod 11 Default",0,
   "intellidemand","New governor from faux123",0,
-  "interactive","CM11 default",0,
   "intelliactive","New governor from faux123",0,
   "elementalx","New governor from flar2",0,
-  "ondemand","SENSE default",0,
+  "interactive","",0,
   "conservative","",0,
   "userspace","",0,
   "powersave","",0,

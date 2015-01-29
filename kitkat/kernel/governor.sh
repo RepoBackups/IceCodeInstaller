@@ -5,10 +5,10 @@ case $val in
     gov="intellimm"
     ;;
   2)
-    gov="intellidemand"
+    gov="ondemand"
     ;;
   3)
-    gov="interactive"
+    gov="intellidemand"
     ;;
   4)
     gov="intelliactive"
@@ -17,7 +17,7 @@ case $val in
     gov="elementalx"
     ;;
   6)
-    gov="ondemand"
+    gov="interactive"
     ;;
   7)
     gov="conservative"
