@@ -58,6 +58,10 @@ if [ "$found" = 'ro.secure=1' ]; then
 	sed -i -e 's|ro.secure=1|ro.secure=0|g' /tmp/ramdisk/default.prop
 fi
 
+#remove governor overrides, use kernel default
+sed -i '/\/sys\/devices\/system\/cpu\/cpu0\/cpufreq\/scaling_governor/d' /tmp/ramdisk/init.qcom.rc
+sed -i '/\/sys\/devices\/system\/cpu\/cpu1\/cpufreq\/scaling_governor/d' /tmp/ramdisk/init.qcom.rc
+
 rm /tmp/ramdisk/boot.img-ramdisk.gz
 rm /tmp/boot.img-ramdisk.gz
 cd /tmp/ramdisk/

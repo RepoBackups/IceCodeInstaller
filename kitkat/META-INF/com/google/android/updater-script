@@ -77,6 +77,7 @@ set_progress(0.6);
 ui_print("Fixing your ramdisk...");
 ui_print("  Looking for busybox...");
 ui_print("  adding init.d support (if not already supported)...");
+ui_print("  removing governor overrides...");
 run_program("/tmp/edit_ramdisk.sh");
 set_progress(0.65);
 
