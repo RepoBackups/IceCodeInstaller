@@ -1,3 +1,8 @@
+Mar 17
+-Merge with CM
+-Add Snappy Compression
+-Build exFAT and SCSI_WAIT_SCAN into the kernel
+
 Feb 23
 -Merge with CM
 
