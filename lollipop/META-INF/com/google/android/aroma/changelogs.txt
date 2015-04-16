@@ -1,3 +1,23 @@
+Apr 16
+-Linux 3.4.106
+-Update Intellidemand to Version 5.0
+-Update Intelli_Plug to Version 4.0
+-Remove __cpuinit
+-Dynamic Fsync
+-Compile Prima as -O3
+-SIO Plus I/O Scheduler
+-TripNDroid I/O Scheduler and Governor
+-Lionheart Governor
+-Badass Governor
+-Preservative Governor
+-QSEECOM Support
+-KCal Control
+-Use a better version of Fast Charge with adjustable Levels
+-LMK Optimizations
+-192MHz Underclocking
+-Wake Controls
+-Merge with CM
+
 Mar 17
 -Merge with CM
 -Add Snappy Compression
