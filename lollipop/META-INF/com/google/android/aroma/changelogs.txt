@@ -1,3 +1,11 @@
+Apr 24
+-Linux 3.4.107
+-Merge with CM
+-Switch from XZ to LZMA Compression
+
+Apr 20
+-Fix Lags and Random Reboots
+
 Apr 16
 -Linux 3.4.106
 -Update Intellidemand to Version 5.0
